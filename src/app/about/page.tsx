@@ -67,12 +67,11 @@ export default function About() {
       />
       {about.tableOfContent.display && (
         <Column
-          left="0"
-          style={{ top: "50%", transform: "translateY(-50%)" }}
+          left="0" 
           position="fixed"
-          paddingLeft="24"
           gap="32"
           s={{ hide: true }}
+          style={{ top: '220px !important', paddingLeft: '24px' }}
         >
           <TableOfContents structure={structure} about={about} />
         </Column>
@@ -96,7 +95,7 @@ export default function About() {
             <Avatar src={person.avatar} size="xl" />
             <Row gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
-              {person.location}
+              {person.displayLocation}
             </Row>
             {person.languages && person.languages.length > 0 && (
               <Row wrap gap="8">

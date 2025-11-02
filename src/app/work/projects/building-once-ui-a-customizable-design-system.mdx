@@ -1,45 +1,36 @@
 ---
-title: "Building Once UI, a Customizable Design System"
-publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+title: "Implementasi One Time Password (OTP) Menggunakan WhatsApp API Pada Sistem Informasi Akademik SMAN 3 Purwokerto "
+publishedAt: "2025-01-14"
+summary: "Mengimplementasikan autentikasi dua faktor (2FA) menggunakan kode One Time Password (OTP) yang dikirimkan secara real time melalui WhatsApp API (Fonnte) pada Sistem Informasi Akademik SMAN 3 Purwokerto"
 images:
-  - "/images/projects/project-01/cover-01.jpg"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
-team:
-  - name: "Selene Yu"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Lorant One"
-    role: "Design Engineer"
-    avatar: "/images/projects/project-01/avatar-01.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+  - "/images/work/home1.jpg"
+link: "http://localhost/sia-otp/home"
 ---
+
+<div style={{ textAlign: 'justify' }}>
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+Mengimplementasikan autentikasi dua faktor (2FA) menggunakan kode One Time Password (OTP) yang dikirimkan secara real time melalui WhatsApp API (Fonnte) pada Sistem Informasi Akademik SMAN 3 Purwokerto
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Two-Factor Authentication (2FA)**: Penerapan mekanisme login dua langkah, di mana pengguna harus memvalidasi kode OTP setelah berhasil memasukkan username dan password untuk mengakses sistem.
+- **WhatsApp API Integration**: Integrasi API pihak ketiga (Fonnte) untuk mengirimkan kode OTP secara otomatis ke nomor WhatsApp pengguna.
+- **Real-Time OTP Delivery**: Pengujian menunjukkan pengiriman kode OTP berlangsung sangat cepat dengan rata-rata delay hanya 1,2 detik.
+- **Secure Code Generation**: Kode OTP 6 digit yang dihasilkan bersifat unik, acak, dan memiliki masa kedaluwarsa untuk meningkatkan ketahanan terhadap serangan brute force.
+
+---
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
-
-## Challenges and Learnings
-
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+- **CodeIgniter (PHP Framework)**: Pondasi utama yang saya pakai untuk membangun seluruh Sistem Informasi Akademik dengan terstruktur.
+- **WhatsApp API (Fonnte)**: Layanan pihak ketiga yang menjadi jembatan untuk mengirimkan kode OTP secara otomatis ke WhatsApp pengguna.
+- **PHP & MySQL**: PHP saya gunakan untuk mengelola logika di belakang layar (backend) dan proses pengamanan data, sementara MySQL saya pakai untuk menyimpan dan mengelola seluruh data akademik.
+- **HTML, CSS, & Bootstrap**: Saya gunakan kombinasi ketiganya untuk merancang antarmuka pengguna (front-end) yang rapi, responsif, dan mudah digunakan.
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+Implementasi autentikasi dua faktor (2FA) menggunakan kode One Time Password (OTP) yang dikirimkan melalui WhatsApp API (Fonnte) pada Sistem Informasi Akademik SMAN 3 Purwokerto telah berhasil diterapkan secara efektif, terbukti mampu meningkatkan aspek keamanan login sistem. Kinerja sistem ini optimal, ditunjukkan dengan rata-rata waktu pengiriman OTP hanya 1,2 detik, sementara hasil pengujian kepuasan pengguna (berdasarkan Skala Likert) mencapai 82,6%, yang mengindikasikan bahwa pengguna sangat mendukung dan puas dengan fungsionalitas dan kemudahan penggunaan solusi keamanan baru tersebut.
+
+</div>

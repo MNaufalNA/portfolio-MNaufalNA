@@ -2,14 +2,15 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  firstName: "Muhamad Naufal",
+  lastName: "Nur Aziz",
+  name: `Muhamad Naufal`,
+  role: "",
+  avatar: "/images/profile2.jpg",
+  email: "mnaufalna1720@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  displayLocation: "Banyumas, Jawa Tengah", // teks yang ditampilkan ke user
+  languages: ["English", "Indonesian"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -24,22 +25,22 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/MNaufalNA",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/muhamad-naufal-791737386/",
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:mnaufalna1720@gmail.com`,
+  },
+  {
+    name: "Instagram",
+    icon: "instagram",
+    link: `https://www.instagram.com/muhamadnovaal?igsh=ajhiazExZHMxaHVu`,
   },
 ];
 
@@ -49,9 +50,9 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Hi! It’s awesome to see you here</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -64,16 +65,13 @@ const home: Home = {
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
-    <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
-    </>
+    <p>
+  I really appreciate you taking the time to visit my portfolio. 
+  I'm <strong>Muhamad Naufal Nur Aziz</strong>, but you can call me <strong>Naufal</strong>. 
+  Here, I share some of the projects I’ve built, showcasing my skills in web development, 
+  design, and problem-solving.
+</p>
+
   ),
 };
 
@@ -90,61 +88,70 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
-      <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
-      </>
+      <p>
+          Even though I don’t have formal work experience yet, I’ve worked on several projects during college 
+          that helped me sharpen my technical skills. I’m always excited to learn new things and give my best 
+          in everything I do.
+      </p>
+
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Project Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "SMAN 3 PURWOKERTO",
+        timeframe: "2024 - 2025",
+        role: "Research Student (IMPLEMENTASI ONE TIME PASSWORD (OTP) MENGGUNAKAN WHATSAPP API PADA SISTEM INFORMASI AKADEMIK SMAN 3 PURWOKERTO)",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Built a web-based academic information system using CodeIgniter framework.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Developed and integrated an OTP authentication feature using WhatsApp API to enhance login security.
           </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          <>
+            Designed and implemented the OTP generation and verification flow within the system.
+          </>,
+          <>
+            Improved authentication reliability and reduced unauthorized access risks.
+          </>,
+          <>
+            Conducted testing and debugging to ensure stable API integration and optimal performance.
+          </>,
+          <>
+            Documented the entire development and implementation process as part of the final thesis research.
+          </>,
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "SDN 2 KEDUNGWRINGIN",
+        timeframe: "2024 - 2024",
+        role: "Internship Project (Development of School Profile Website)",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built the website using CodeIgniter framework with HTML, CSS, and PHP.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Created pages to display school information, achievements, facilities, and teacher data.
           </>,
+          <>
+            Collaborated with school staff to gather content and ensure accurate information display.
+          </>,
+          <>
+            Streamlined data and system management to improve administrative efficiency and data reliability.
+          </>,
+          <>
+            Tested and deployed the website to ensure functionality and user accessibility.
+          </>
         ],
         images: [],
       },
@@ -155,12 +162,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Muhammadiyah University of Purwokerto",
+        description: <>Informatics Engineering.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "2020 - 2025",
+        description: <>GPA 3.49</>,
       },
     ],
   },
@@ -169,60 +176,40 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "PHP",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <><>Experienced in developing dynamic web applications using PHP and the CodeIgniter framework.</></>
+        )
+      },
+      {
+      title: "CodeIgniter",
+      description: (
+        <>Proficient in using the CodeIgniter framework to build efficient and maintainable web applications.</>
+        )
+      },
+      {
+      title: "SQL",
+      description: (
+        <>Proficient in managing and querying relational databases using MySQL.</>
         ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+      },
+      {
+      title: "CSS",
+      description: (
+        <>Skilled in designing modern and responsive user interfaces using CSS 3 and frameworks like Bootstrap.</>
+        ),
+      },
+      {
+      title: "Node.js",
+      description: (
+        <>Understanding of building simple APIs and backend services using Node.js and Express.js.</>
+        ),
       },
       {
         title: "Next.js",
         description: (
           <>Building next gen apps with Next.js + Once UI + Supabase.</>
         ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
       },  
     ],
   },
@@ -239,7 +226,7 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Work",
+  label: "Projects",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
