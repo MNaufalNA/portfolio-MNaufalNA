@@ -69,7 +69,7 @@ const home: Home = {
   I really appreciate you taking the time to visit my portfolio. 
   I'm <strong>Muhamad Naufal Nur Aziz</strong>, but you can call me <strong>Naufal</strong>. 
   Here, I share some of the projects I’ve built, showcasing my skills in web development, 
-  design, and problem-solving.
+  design, and problem solving.
 </p>
 
   ),
